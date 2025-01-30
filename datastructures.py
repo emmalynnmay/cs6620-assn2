@@ -6,7 +6,7 @@ api_key = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key=api_key)
 
 questions = [
-    "You need to store User IDs, avoiding duplicates. What data structure should you use for greatest time efficiency?"
+    "You need to store User IDs, avoiding duplicates. What data structure should you use for greatest time efficiency?",
     "Why does it take up to O(n) time to insert a new value into a sorted linked list while keeping it sorted?"
 ]
 
