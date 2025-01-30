@@ -6,8 +6,8 @@ api_key = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key=api_key)
 
 questions = [
-    "Your opponent hits a ball short to your forehand. How do you respond?\n",
-    "Your opponent hits the ball deep to your backhand with a lot of topspin. How do you respond?\n"
+    "You need to store User IDs, avoiding duplicates. What data structure should you use for greatest time efficiency?"
+    "Why does it take up to O(n) time to insert a new value into a sorted linked list while keeping it sorted?"
 ]
 
 # question = questions[0]
@@ -20,8 +20,8 @@ def askQuestion(question):
         messages=[
             {
                 "role": "developer",
-                "content": ("Pretend you are a coach who is teaching tennis strategy to a student."
-                "You will ask the student about a scenerio that may arise during a tennis match."
+                "content": ("Pretend you are an instructor for a data structures course."
+                "You will ask the student a question about a data structures topic."
                 "When they respond, let them know if there answer is acceptable. If their answer is not"
                 "Acceptable, give them some feedback on how they may improve.")
             },
